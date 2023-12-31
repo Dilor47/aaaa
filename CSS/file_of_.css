@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@600&family=Newsreader:opsz,wght@6..72,500&family=Playfair+Display:ital@1&family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@600&family=Newsreader:opsz,wght@6..72,500&family=Playfair+Display:ital@1&family=Poppins:wght@300&family=Signika:wght@600&family=Work+Sans:ital@1&display=swap');
+
+
+body{
+  height: 150vh;
+  margin: 0;
+  padding: 0;
+  --main-bk-color: rgb(54, 54, 54);
+  --main-text-color: rgb(102, 99, 99);
+  --whiter-color: rgb(219, 216, 217);
+  overflow-x: hidden;
+}
+
+.main_cont_cards{
+  width: 100%;
+  height: 650px;
+}
+
+.carousel{
+  /*padding: 10px;
+  margin: 5px;*/
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(79, 5, 104));
+}
+
+.part{
+  min-width: 100%;
+  min-height: 600px;
+  height: auto;
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+}
+
+.part img{
+  min-width: 60%;
+  max-width: 70%;
+  height: auto;
+  padding: 30px;
+  border-radius:70px;
+  grid-area: 1 / 2 / 2 / 3;
+  align-self: center;
+  justify-self: end;
+  padding-right: 40px;
+}
+
+.descr{
+  grid-area: 1 / 1 / 2 / 2;
+  color: var(--whiter-color);
+  font-family: 'Signika', sans-serif;
+}
+
+.all_info_anime{
+  padding: 20px;
+}
+
+.all_info_anime h1{
+  text-align: start;
+  font-size: 100px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 0;
+  font-weight: bolder;
+} 
+
+
+.short_info{
+  display: flex;
+  text-align: center;
+  color: var(--main-text-color);
+} 
+
+.elem{
+  margin: 3px;
+  background-color: black;
+  color: white;
+  width: 35px;
+  height: 35px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.main_text{
+  font-size:18px;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.carousel_button{
+  margin-top: 5%;
+  width: 300px;
+  height: 55px;
+  background-color: rgb(83, 27, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: .4s ease-in-out;
+}
+
+.carousel_button i{
+  padding: 5px;
+}
+
+.carousel_button:hover{
+  background-color: rgb(103, 30, 172);
+}
+

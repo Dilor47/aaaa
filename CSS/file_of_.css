@@ -20,8 +20,6 @@ body{
 }
 
 .carousel{
-  /*padding: 10px;
-  margin: 5px;*/
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -30,23 +28,30 @@ body{
   scroll-snap-type: x mandatory;
   gap: 10px;
   background: linear-gradient(to right, rgb(0, 0, 0), rgb(79, 5, 104));
+  transition: 10s ease;
+  cursor: grab;
+  scroll-behavior: smooth;
 }
 
 .part{
   min-width: 100%;
   min-height: 600px;
   height: auto;
-  scroll-snap-align: start;
+  scroll-snap-align: end;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 100%;
+  position: relative;
+
 }
 
 .part img{
+  
   min-width: 60%;
   max-width: 70%;
   height: auto;
   padding: 30px;
+
   border-radius:70px;
   grid-area: 1 / 2 / 2 / 3;
   align-self: center;
@@ -70,6 +75,7 @@ body{
   font-family: 'Bebas Neue', sans-serif;
   margin-bottom: 0;
   font-weight: bolder;
+  user-select: none;
 } 
 
 
@@ -77,6 +83,8 @@ body{
   display: flex;
   text-align: center;
   color: var(--main-text-color);
+
+  user-select: none;
 } 
 
 .elem{
@@ -101,6 +109,8 @@ body{
   font-size:18px;
   line-height: 1.6rem;
   letter-spacing: 1px;
+
+  user-select: none;
 }
 
 .carousel_button{
@@ -124,4 +134,25 @@ body{
 .carousel_button:hover{
   background-color: rgb(103, 30, 172);
 }
+
+.choices{
+  color: var(--whiter-color);
+  position: absolute;
+  top: 560px;
+  left: 50%;
+  transform:translateX(-50%);
+}
+
+.choices i{
+  cursor: pointer;
+  padding: 3px;
+}
+
+
+.active{
+  color:rgb(190, 31, 243);
+  font-weight: bolder;
+}
+
+
 

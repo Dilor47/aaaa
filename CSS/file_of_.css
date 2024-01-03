@@ -14,41 +14,25 @@ body{
   overflow-x: hidden;
 }
 
-.main_cont_cards{
-  width: 100%;
-  height: 650px;
+*{
+  box-sizing: border-box;
 }
 
-.carousel{
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  overflow-y: hidden;
-  width: 100%;
-  scroll-snap-type: x mandatory;
-  gap: 10px;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(79, 5, 104));
-  transition: 10s ease;
-  cursor: grab;
-  scroll-behavior: smooth;
+
+.main-carousel{
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(125, 37, 155));
 }
 
-.part{
-  min-width: 100%;
-  min-height: 600px;
-  height: auto;
-  scroll-snap-align: end;
+
+.carousel-cell{
+  width: 100%;
+  height: 600px;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 100%;
-  position: relative;
-
 }
 
-.part img{
-  
-  min-width: 60%;
-  max-width: 70%;
+.carousel-cell img{
   height: auto;
   padding: 30px;
 
@@ -56,7 +40,6 @@ body{
   grid-area: 1 / 2 / 2 / 3;
   align-self: center;
   justify-self: end;
-  padding-right: 40px;
 }
 
 .descr{
@@ -134,25 +117,3 @@ body{
 .carousel_button:hover{
   background-color: rgb(103, 30, 172);
 }
-
-.choices{
-  color: var(--whiter-color);
-  position: absolute;
-  top: 560px;
-  left: 50%;
-  transform:translateX(-50%);
-}
-
-.choices i{
-  cursor: pointer;
-  padding: 3px;
-}
-
-
-.active{
-  color:rgb(190, 31, 243);
-  font-weight: bolder;
-}
-
-
-

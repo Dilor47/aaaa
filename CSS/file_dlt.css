@@ -1,35 +1,3 @@
-body{
-  background: pink;
-  height: 150vh;
-  margin: 0;
-  padding: 0;
-}
-
-*{
-  box-sizing: border-box;
-}
-
-
-html{
-  overflow-y: scroll;
-}
-
-
-
-
-.carousel-cell{
-  width: 100%;
-  height: 600px;
+#myButton{
   background-color: aqua;
-  
-
 }
-
-
-.carousel-cell img {
-  display: flex;
-  justify-content: center;
-  
-}
-
-

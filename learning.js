@@ -4,13 +4,14 @@ const try_p = new Promise((resolve, reject) => {
     resolve('Yeah Bro');
   } else {
     reject('UHHHH bro you SUCK!');
+    console.log('XXXXXX Bddd losee');
   }
 });
 
 try_p.then((message) => alert(message)).catch((message) => alert(message));
 
 function a() {
-  return 'p';
+  return 'Made some changes';
 }
 
 a.toString = () => 'sss';

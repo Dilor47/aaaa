@@ -14,32 +14,44 @@ body{
   overflow-x: hidden;
 }
 
-*{
-  box-sizing: border-box;
-}
-
-
-.main-carousel{
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(125, 37, 155));
-}
-
-
-.carousel-cell{
+.main_cont_cards{
   width: 100%;
-  height: 600px;
+  height: 650px;
+}
+
+.carousel{
+  /*padding: 10px;
+  margin: 5px;*/
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(79, 5, 104));
+}
+
+.part{
+  min-width: 100%;
+  min-height: 600px;
+  height: auto;
+  scroll-snap-align: start;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 100%;
 }
 
-.carousel-cell img{
+.part img{
+  min-width: 60%;
+  max-width: 70%;
   height: auto;
   padding: 30px;
-
   border-radius:70px;
   grid-area: 1 / 2 / 2 / 3;
   align-self: center;
   justify-self: end;
+  padding-right: 40px;
 }
 
 .descr{
@@ -58,7 +70,6 @@ body{
   font-family: 'Bebas Neue', sans-serif;
   margin-bottom: 0;
   font-weight: bolder;
-  user-select: none;
 } 
 
 
@@ -66,8 +77,6 @@ body{
   display: flex;
   text-align: center;
   color: var(--main-text-color);
-
-  user-select: none;
 } 
 
 .elem{
@@ -92,8 +101,6 @@ body{
   font-size:18px;
   line-height: 1.6rem;
   letter-spacing: 1px;
-
-  user-select: none;
 }
 
 .carousel_button{
@@ -117,3 +124,4 @@ body{
 .carousel_button:hover{
   background-color: rgb(103, 30, 172);
 }
+

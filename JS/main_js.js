@@ -6,7 +6,7 @@ let carousel_html = '';
 
 anime_description.forEach((element) => {
   carousel_html += `
-  <div class="carousel-cell">
+  <div class="carousel-cell">sxsxsxsxsxs
     <div class="descr">
       <div class="all_info_anime">
         <h1>

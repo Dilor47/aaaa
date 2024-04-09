@@ -14,4 +14,4 @@ function a() {
   return 'Made some changes';
 }
 
-a.toString = () => 'sss';
+a.toString = () => 'sss';vfvfvf

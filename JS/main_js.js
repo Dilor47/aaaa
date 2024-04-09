@@ -12,7 +12,7 @@ anime_description.forEach((element) => {
         <h1>
           ${element.title}
         </h1>
-        <div class="short_info">
+        <div class="short_infovvvv">
           <p class="icon">${element.age_limit}</p>
 
           <div class="icons">

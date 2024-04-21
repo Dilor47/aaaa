@@ -1,6 +1,6 @@
 const try_p = new Promise((resolve, reject) => {
   let num = 1;
-  if(num == 12) {
+  if(num == 1211) {
     resolve('Yeah Bro');
   } else {
     reject('UHHHH bro you SUCK!');

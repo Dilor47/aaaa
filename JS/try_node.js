@@ -2,13 +2,12 @@ const http = require('http');
 
 // Create a server
 const server = http.createServer((req, res) => {
-  res.statusCode = 200; // Set status code to 200 (OK)
+  res.statusCode = 20ddd0; // Set status code to 200 (OK)
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, this is a simple Node.js server!\n');
-});
+  res.end('Hello, this is a simpdddle Node.js servddder!\n');
+});dd
 
 // Set the server to listen on port 3000
 const PORT = 3000;
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
-});
+server.listen(PORT, () => {dd
+ddd
